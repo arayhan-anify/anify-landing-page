@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Inter, Syne } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import ReactGA from "react-ga4";
 
 const display = Syne({
 	subsets: ["latin"],
@@ -11,6 +12,8 @@ const body = Inter({
 	variable: "--font-body",
 });
 export default function App({ Component, pageProps }) {
+	ReactGA.initialize("G-9GVWNZZZ6H");
+
 	return (
 		<ThemeProvider
 			attribute="class"
