@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ReactGA from "react-ga4";
 import { FeatureSection } from "@/components/sections/FeatureSection";
 import {
 	Header,
@@ -22,6 +23,11 @@ import {
 } from "@/data";
 
 export default function Home() {
+	ReactGA.send("pageview", {
+		page: "/",
+		title: "Anify - Master the impossible",
+	});
+
 	return (
 		<>
 			<Head>
