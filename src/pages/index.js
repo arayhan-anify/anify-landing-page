@@ -141,7 +141,6 @@ export default function Home() {
 			<CtaSection
 				title="Ready to get started?"
 				description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique"
-				buttons={[{ label: "Start for Free", href: "#", color: "dark" }]}
 			/>
 			<Footer
 				id="footer"
